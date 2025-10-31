@@ -3,23 +3,80 @@
 
 <head>
   <meta charset="utf-8">
-  <title>CS208 - Starter Code (UPDATE ME)!</title>
+  <title>Lineup</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-  <h1>HTML Rocks!!</h1>
-  <ul>
-  <li><a href="/hello">Click here to say hello</a></li>
-  <li><button id="hello-link">Click Me!</button></li>
-  <li><button id="joke-button">Dad Joke!</button></li>
-  <script src="script.js"></script>
-  </ul>
-  <img src="funny.png" alt="Funny Image" width="300" height="200">
 
-  <h2 id="joke-display"></h2>
+
+<body>
+  
+  <h1>Starting Lineup</h1>
+  <form id="lineUpForm" method="post">
+    <fieldset>
+      <legend>Status: </legend>  
+
+        <input type="radio" id="Draft" name="Status" value="Draft">
+        <label for="Draft">Draft</label>
+
+        <input type="radio" id="Final" name="Status" value="Status" checked>
+        <label for="Final">Final</label>
+
+    </fieldset>
+
+
+    <p>
+      Date: 
+      <select name="gameDate">
+        <option value="March 20">March 20</option>
+        <option value="March 24">March 24</option>
+        <option value="April 2">April 2</option>
+        <option value="April 6">April 6</option>
+        <option value="April 13">April 13</option>
+      </select>
+    </p>
+
+
+    <fieldset>
+      <legend>Players: </legend>  
+      <p>
+        <input type="checkbox" id="Aarav_Agarwal" value="Aarav_Agarwal" name="Players">
+        <label for="Aarav_Agarwal">Aarav Agarwal</label>
+      </p>
+      
+      <p>
+        <input type="checkbox" id="Ava_Johnson" value="Ava_Johnson" name="Players">
+        <label for="Ava_Johnson">Ava Johnson</label>
+      </p>
+
+      <p>
+        <input type="checkbox" id="Julio_Ortiz" value="Julio_Ortiz" name="Players">
+        <label for="Julio_Ortiz">Julio Ortiz</label>
+      </p>
+
+      <p>
+        <input type="checkbox" id="Liam_Rubio" value="Liam_Rubio" name="Players">
+        <label for="Liam_Rubio">Liam Rubio</label>
+      </p>
+
+      <p>
+        <input type="checkbox" id="Emma_Witherspoon" value="Emma_Witherspoon" name="Players">
+        <label for="Emma_Witherspoon">Emma Witherspoon</label>
+      </p>
+    </fieldset>
+
+    <input type="button" id="submit_button" value="submit">
+
+    <script src="script.js" defer></script>
+  </form>
+
+
+  <div id="formResult" hidden>
+    <p></p>
+  </div>
+
 </body>
 
 </html>
